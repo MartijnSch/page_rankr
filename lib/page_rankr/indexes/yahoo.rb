@@ -17,10 +17,6 @@ module PageRankr
         "//div[@id='pg']/span/text()"
       end
 
-      def clean
-        super(backlink_count.gsub(' results', ''))
-      end
-
       def name
         :indexes_yahoo
       end
